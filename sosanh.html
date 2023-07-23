@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numb01 = +prompt("Nhập số thứ nhất");
+        var numb02 = +prompt("Nhập số thứ hai");
+        var numb03 = +prompt("Nhập số thứ ba");
+        var solonnhat = 0;
+        var sonhonhat = 0;
+
+        //tìm số lớn nhất
+        if(numb01==0 && numb02==0 && numb03==0){
+            var numb01 = +prompt("Nhập số thứ nhất");
+            var numb02 = +prompt("Nhập số thứ hai");
+            var numb03 = +prompt("Nhập số thứ ba");
+        }
+        if(numb01==numb02 && numb01==numb03){
+            solonnhat=numb01;
+            sonhonhat=numb01;
+        }
+        if(numb01>numb02 && numb01>numb03){
+            solonnhat = numb01;
+        }
+        else if(numb02>numb01 && numb02>numb03){
+            solonnhat = numb02;
+        }
+        else{
+            solonnhat = numb03;
+        }
+
+        //Số nhỏ nhất
+        if(numb01<numb02 && numb01<numb03){
+            sonhonhat = numb01;
+        }
+        else if(numb02<numb01 && numb02<numb03){
+            sonhonhat = numb02;
+        }
+        else{
+            sonhonhat = numb03;
+        }
+
+        alert("số lớn nhất là: "+ solonnhat);
+        alert("số nhỏ nhất là: "+ sonhonhat);
+        
+    </script>
+</body>
+</html>
